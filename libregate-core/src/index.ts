@@ -1,3 +1,17 @@
-export const greet = () => {
-  console.log("Welcome to LibreGate Core Library!");
+class App {
+  private _goal: string;
+
+  constructor() {
+    this._goal = '';
+  }
+
+  setGoal(goal: string) {
+    this._goal = goal;
+  }
+
+  queryGoal() {
+    return this._goal;
+  }
 };
+
+export const app = new App();
