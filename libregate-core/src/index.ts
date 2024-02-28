@@ -1,17 +1,25 @@
+class Goal {
+  title: string;
+  constructor(title: string) {
+    this.title = title;
+  }
+}
+
 class App {
-  private _goal: string;
+  private _goal: Goal;
 
   constructor() {
-    this._goal = '';
+    this._goal = new Goal('');
   }
 
   setGoal(goal: string) {
-    this._goal = goal;
+    this._goal = new Goal(goal);
   }
 
   queryGoal() {
-    return this._goal;
+    return this._goal.title;
   }
 };
 
 export const app = new App();
+
