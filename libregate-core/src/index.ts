@@ -5,7 +5,7 @@ class Goal {
   }
 }
 
-class App {
+export class App {
   private _goal: Goal;
 
   constructor() {
